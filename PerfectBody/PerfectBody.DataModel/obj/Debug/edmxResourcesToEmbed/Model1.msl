@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MyFitBodyModelStoreContainer" CdmEntityContainer="MyFitBodyEntities">
+    <EntitySetMapping Name="avoirRole">
+      <EntityTypeMapping TypeName="IsTypeOf(MyFitBodyModel.avoirRole)">
+        <MappingFragment StoreEntitySet="avoirRole">
+          <ScalarProperty Name="idRole" ColumnName="idRole" />
+          <ScalarProperty Name="idCoach" ColumnName="idCoach" />
+          <ScalarProperty Name="idClient" ColumnName="idClient" />
+          <ScalarProperty Name="idSpecN" ColumnName="idSpecN" />
+          <ScalarProperty Name="idGestionnaire" ColumnName="idGestionnaire" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="clients">
+      <EntityTypeMapping TypeName="IsTypeOf(MyFitBodyModel.clients)">
+        <MappingFragment StoreEntitySet="clients">
+          <ScalarProperty Name="idClient" ColumnName="idClient" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="prenom" ColumnName="prenom" />
+          <ScalarProperty Name="photo" ColumnName="photo" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="coach">
+      <EntityTypeMapping TypeName="IsTypeOf(MyFitBodyModel.coach)">
+        <MappingFragment StoreEntitySet="coach">
+          <ScalarProperty Name="idCoach" ColumnName="idCoach" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="prenom" ColumnName="prenom" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="photo" ColumnName="photo" />
+          <ScalarProperty Name="bio" ColumnName="bio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="composer">
+      <EntityTypeMapping TypeName="IsTypeOf(MyFitBodyModel.composer)">
+        <MappingFragment StoreEntitySet="composer">
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="label" ColumnName="label" />
+          <ScalarProperty Name="quentite" ColumnName="quentite" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="exercices">
+      <EntityTypeMapping TypeName="IsTypeOf(MyFitBodyModel.exercices)">
+        <MappingFragment StoreEntitySet="exercices">
+          <ScalarProperty Name="idExercice" ColumnName="idExercice" />
+          <ScalarProperty Name="duree" ColumnName="duree" />
+          <ScalarProperty Name="freqence" ColumnName="freqence" />
+          <ScalarProperty Name="idCoach" ColumnName="idCoach" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gestionnaire">
+      <EntityTypeMapping TypeName="IsTypeOf(MyFitBodyModel.gestionnaire)">
+        <MappingFragment StoreEntitySet="gestionnaire">
+          <ScalarProperty Name="idGestionnaire" ColumnName="idGestionnaire" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="prenom" ColumnName="prenom" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ingredients">
+      <EntityTypeMapping TypeName="IsTypeOf(MyFitBodyModel.ingredients)">
+        <MappingFragment StoreEntitySet="ingredients">
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="calories" ColumnName="calories" />
+          <ScalarProperty Name="label" ColumnName="label" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="maladies">
+      <EntityTypeMapping TypeName="IsTypeOf(MyFitBodyModel.maladies)">
+        <MappingFragment StoreEntitySet="maladies">
+          <ScalarProperty Name="nomMaladie" ColumnName="nomMaladie" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="repas">
+      <EntityTypeMapping TypeName="IsTypeOf(MyFitBodyModel.repas)">
+        <MappingFragment StoreEntitySet="repas">
+          <ScalarProperty Name="label" ColumnName="label" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="photo" ColumnName="photo" />
+          <ScalarProperty Name="idSpecN" ColumnName="idSpecN" />
+          <ScalarProperty Name="label_typeRepas" ColumnName="label_typeRepas" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="role">
+      <EntityTypeMapping TypeName="IsTypeOf(MyFitBodyModel.role)">
+        <MappingFragment StoreEntitySet="role">
+          <ScalarProperty Name="idRole" ColumnName="idRole" />
+          <ScalarProperty Name="nomRole" ColumnName="nomRole" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="specNutrition">
+      <EntityTypeMapping TypeName="IsTypeOf(MyFitBodyModel.specNutrition)">
+        <MappingFragment StoreEntitySet="specNutrition">
+          <ScalarProperty Name="idSpecN" ColumnName="idSpecN" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="prenom" ColumnName="prenom" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="photo" ColumnName="photo" />
+          <ScalarProperty Name="bio" ColumnName="bio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="typeIngredient">
+      <EntityTypeMapping TypeName="IsTypeOf(MyFitBodyModel.typeIngredient)">
+        <MappingFragment StoreEntitySet="typeIngredient">
+          <ScalarProperty Name="label" ColumnName="label" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="typeOfExercice">
+      <EntityTypeMapping TypeName="IsTypeOf(MyFitBodyModel.typeOfExercice)">
+        <MappingFragment StoreEntitySet="typeOfExercice">
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="typeRepas">
+      <EntityTypeMapping TypeName="IsTypeOf(MyFitBodyModel.typeRepas)">
+        <MappingFragment StoreEntitySet="typeRepas">
+          <ScalarProperty Name="label" ColumnName="label" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="reponses">
+      <EntityTypeMapping TypeName="IsTypeOf(MyFitBodyModel.reponses)">
+        <MappingFragment StoreEntitySet="reponses">
+          <ScalarProperty Name="idReponse" ColumnName="idReponse" />
+          <ScalarProperty Name="reponse" ColumnName="reponse" />
+          <ScalarProperty Name="juste" ColumnName="juste" />
+          <ScalarProperty Name="id_question" ColumnName="id_question" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="questions">
+      <EntityTypeMapping TypeName="IsTypeOf(MyFitBodyModel.questions)">
+        <MappingFragment StoreEntitySet="questions">
+          <ScalarProperty Name="id_question" ColumnName="id_question" />
+          <ScalarProperty Name="label" ColumnName="label" />
+          <ScalarProperty Name="idGestionnaire" ColumnName="idGestionnaire" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="appartient" TypeName="MyFitBodyModel.appartient" StoreEntitySet="appartient">
+      <EndProperty Name="exercices">
+        <ScalarProperty Name="idExercice" ColumnName="exercices_idExercice" />
+      </EndProperty>
+      <EndProperty Name="typeOfExercice">
+        <ScalarProperty Name="type" ColumnName="typeOfExercice_type" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="consulter" TypeName="MyFitBodyModel.consulter" StoreEntitySet="consulter">
+      <EndProperty Name="clients">
+        <ScalarProperty Name="idClient" ColumnName="clients_idClient" />
+      </EndProperty>
+      <EndProperty Name="exercices">
+        <ScalarProperty Name="idExercice" ColumnName="exercices_idExercice" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="excluser" TypeName="MyFitBodyModel.excluser" StoreEntitySet="excluser">
+      <EndProperty Name="maladies">
+        <ScalarProperty Name="nomMaladie" ColumnName="maladies_nomMaladie" />
+      </EndProperty>
+      <EndProperty Name="repas">
+        <ScalarProperty Name="label" ColumnName="repas_label" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="avoir" TypeName="MyFitBodyModel.avoir" StoreEntitySet="avoir">
+      <EndProperty Name="maladies">
+        <ScalarProperty Name="nomMaladie" ColumnName="maladies_nomMaladie" />
+      </EndProperty>
+      <EndProperty Name="reponses">
+        <ScalarProperty Name="idReponse" ColumnName="reponses_idReponse" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="filtrerExercice" TypeName="MyFitBodyModel.filtrerExercice" StoreEntitySet="filtrerExercice">
+      <EndProperty Name="exercices">
+        <ScalarProperty Name="idExercice" ColumnName="exercices_idExercice" />
+      </EndProperty>
+      <EndProperty Name="reponses">
+        <ScalarProperty Name="idReponse" ColumnName="reponses_idReponse" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="filtrerRepas" TypeName="MyFitBodyModel.filtrerRepas" StoreEntitySet="filtrerRepas">
+      <EndProperty Name="repas">
+        <ScalarProperty Name="label" ColumnName="repas_label" />
+      </EndProperty>
+      <EndProperty Name="reponses">
+        <ScalarProperty Name="idReponse" ColumnName="reponses_idReponse" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="repondre" TypeName="MyFitBodyModel.repondre" StoreEntitySet="repondre">
+      <EndProperty Name="clients">
+        <ScalarProperty Name="idClient" ColumnName="clients_idClient" />
+      </EndProperty>
+      <EndProperty Name="reponses">
+        <ScalarProperty Name="idReponse" ColumnName="reponses_idReponse" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,38 @@
+<div class="container">
+  <h1 class="section-title">Repas list</h1>
+  <div class="row">
+
+    <div class="container d-flex align-items-center">
+
+      <div class="container row row-cols-1 row-cols-md-3">
+        <!-- card start -->
+        <div *ngFor="let repa of repas" class="col mb-4">
+          <div class="card promoting-card">
+            <div class="card-body d-flex flex-row">
+              <div>
+                <h4 class="card-title font-weight-bold mb-2">{{repa.label}}</h4>
+              </div>
+            </div>
+            <div class="view overlay">
+              <img class="card-img-top rounded-0" src="{{repa.photo}}" alt="Card image cap">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="collapse-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nihil possimus unde culpa
+                  dolorem enim molestiae numquam ipsam inventore, qui nisi minima magnam. Minima consequatur beatae, eum
+                  nulla voluptatibus sunt.</p>
+                <p>Type de Repas : {{repa.label_typeRepas}}</p>
+                <a class="btn btn-info" href="">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- caed end -->
+        <!--  -->
+        <!--  -->
+      </div>
+    </div>
+  </div>

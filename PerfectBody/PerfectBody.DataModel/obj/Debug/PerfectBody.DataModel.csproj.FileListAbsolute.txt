@@ -1,0 +1,14 @@
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.DataModel\bin\Debug\PerfectBody.DataModel.dll.config
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.DataModel\bin\Debug\PerfectBody.DataModel.dll
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.DataModel\bin\Debug\PerfectBody.DataModel.pdb
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.DataModel\bin\Debug\EntityFramework.dll
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.DataModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.DataModel\bin\Debug\EntityFramework.xml
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.DataModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.DataModel\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.DataModel\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.DataModel\obj\Debug\PerfectBody.DataModel.csprojAssemblyReference.cache
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.DataModel\obj\Debug\PerfectBody.DataModel.csproj.CoreCompileInputs.cache
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.DataModel\obj\Debug\PerfectBody.DataModel.csproj.CopyComplete
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.DataModel\obj\Debug\PerfectBody.DataModel.dll
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.DataModel\obj\Debug\PerfectBody.DataModel.pdb

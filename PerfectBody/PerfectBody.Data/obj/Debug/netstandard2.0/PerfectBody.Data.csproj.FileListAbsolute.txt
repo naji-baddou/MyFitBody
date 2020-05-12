@@ -1,0 +1,8 @@
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.Data\bin\Debug\netstandard2.0\PerfectBody.Data.deps.json
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.Data\bin\Debug\netstandard2.0\PerfectBody.Data.dll
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.Data\obj\Debug\netstandard2.0\PerfectBody.Data.csproj.CoreCompileInputs.cache
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.Data\obj\Debug\netstandard2.0\PerfectBody.Data.AssemblyInfoInputs.cache
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.Data\obj\Debug\netstandard2.0\PerfectBody.Data.AssemblyInfo.cs
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.Data\bin\Debug\netstandard2.0\PerfectBody.Data.pdb
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.Data\obj\Debug\netstandard2.0\PerfectBody.Data.dll
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.Data\obj\Debug\netstandard2.0\PerfectBody.Data.pdb

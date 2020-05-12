@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0f558fffbfbd4cf5a30dd1ef984e0b88" Name="Diagram1">
+        <EntityTypeShape EntityType="MyFitBodyModel.avoirRole" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyFitBodyModel.clients" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyFitBodyModel.coach" Width="1.5" PointX="0.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyFitBodyModel.composer" Width="1.5" PointX="13.25" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyFitBodyModel.exercices" Width="1.5" PointX="6" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyFitBodyModel.gestionnaire" Width="1.5" PointX="0.75" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyFitBodyModel.ingredients" Width="1.5" PointX="11" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyFitBodyModel.maladies" Width="1.5" PointX="6" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyFitBodyModel.repas" Width="1.5" PointX="6" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyFitBodyModel.role" Width="1.5" PointX="0.75" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyFitBodyModel.specNutrition" Width="1.5" PointX="0.75" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyFitBodyModel.typeIngredient" Width="1.5" PointX="8.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyFitBodyModel.typeOfExercice" Width="1.5" PointX="8.25" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyFitBodyModel.typeRepas" Width="1.5" PointX="3.75" PointY="11.375" IsExpanded="true" />
+        <AssociationConnector Association="MyFitBodyModel.avoirRole_clients1_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="MyFitBodyModel.avoirRole_coach0_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="MyFitBodyModel.avoirRole_gestionnaire3_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="MyFitBodyModel.avoirRole_role_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="MyFitBodyModel.avoirRole_specNutrition2_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="MyFitBodyModel.exercices_coach_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="MyFitBodyModel.composer_ingredients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="MyFitBodyModel.composer_repas0_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="MyFitBodyModel.ingredients_typeIngredient_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="MyFitBodyModel.repas_specNutrition_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="MyFitBodyModel.repas_typeRepas0_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="MyFitBodyModel.appartient" ManuallyRouted="false" />
+        <AssociationConnector Association="MyFitBodyModel.consulter" ManuallyRouted="false" />
+        <AssociationConnector Association="MyFitBodyModel.excluser" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="MyFitBodyModel.reponses" Width="1.5" PointX="9.125" PointY="4.25" />
+        <AssociationConnector Association="MyFitBodyModel.avoir" />
+        <AssociationConnector Association="MyFitBodyModel.filtrerExercice" />
+        <AssociationConnector Association="MyFitBodyModel.filtrerRepas" />
+        <AssociationConnector Association="MyFitBodyModel.repondre" />
+        <EntityTypeShape EntityType="MyFitBodyModel.questions" Width="1.5" PointX="3" PointY="14.25" />
+        <AssociationConnector Association="MyFitBodyModel.questions_gestionnaire_FK" />
+        <AssociationConnector Association="MyFitBodyModel.FK_reponses_question" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,8 @@
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.Logique\bin\Debug\netstandard2.0\PerfectBody.Logique.deps.json
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.Logique\bin\Debug\netstandard2.0\PerfectBody.Logique.dll
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.Logique\bin\Debug\netstandard2.0\PerfectBody.Logique.pdb
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.Logique\obj\Debug\netstandard2.0\PerfectBody.Logique.csproj.CoreCompileInputs.cache
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.Logique\obj\Debug\netstandard2.0\PerfectBody.Logique.AssemblyInfoInputs.cache
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.Logique\obj\Debug\netstandard2.0\PerfectBody.Logique.AssemblyInfo.cs
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.Logique\obj\Debug\netstandard2.0\PerfectBody.Logique.dll
+C:\Users\Youcode\source\repos\PerfectBody\PerfectBody.Logique\obj\Debug\netstandard2.0\PerfectBody.Logique.pdb

@@ -1,0 +1,661 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyFitBodyModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="MyFitBodyModelStoreContainer">
+    <EntitySet Name="avoirRole" EntityType="MyFitBodyModel.Store.avoirRole" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="clients" EntityType="MyFitBodyModel.Store.clients" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="coach" EntityType="MyFitBodyModel.Store.coach" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="composer" EntityType="MyFitBodyModel.Store.composer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="exercices" EntityType="MyFitBodyModel.Store.exercices" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="gestionnaire" EntityType="MyFitBodyModel.Store.gestionnaire" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ingredients" EntityType="MyFitBodyModel.Store.ingredients" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="maladies" EntityType="MyFitBodyModel.Store.maladies" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="repas" EntityType="MyFitBodyModel.Store.repas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="role" EntityType="MyFitBodyModel.Store.role" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="specNutrition" EntityType="MyFitBodyModel.Store.specNutrition" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="typeIngredient" EntityType="MyFitBodyModel.Store.typeIngredient" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="typeOfExercice" EntityType="MyFitBodyModel.Store.typeOfExercice" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="typeRepas" EntityType="MyFitBodyModel.Store.typeRepas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="reponses" EntityType="MyFitBodyModel.Store.reponses" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="questions" EntityType="MyFitBodyModel.Store.questions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="appartient" EntityType="MyFitBodyModel.Store.appartient" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="consulter" EntityType="MyFitBodyModel.Store.consulter" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="excluser" EntityType="MyFitBodyModel.Store.excluser" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="avoir" EntityType="MyFitBodyModel.Store.avoir" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="filtrerExercice" EntityType="MyFitBodyModel.Store.filtrerExercice" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="filtrerRepas" EntityType="MyFitBodyModel.Store.filtrerRepas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="repondre" EntityType="MyFitBodyModel.Store.repondre" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="avoirRole_clients1_FK" Association="MyFitBodyModel.Store.avoirRole_clients1_FK">
+      <End Role="clients" EntitySet="clients" />
+      <End Role="avoirRole" EntitySet="avoirRole" />
+    </AssociationSet>
+    <AssociationSet Name="avoirRole_coach0_FK" Association="MyFitBodyModel.Store.avoirRole_coach0_FK">
+      <End Role="coach" EntitySet="coach" />
+      <End Role="avoirRole" EntitySet="avoirRole" />
+    </AssociationSet>
+    <AssociationSet Name="avoirRole_gestionnaire3_FK" Association="MyFitBodyModel.Store.avoirRole_gestionnaire3_FK">
+      <End Role="gestionnaire" EntitySet="gestionnaire" />
+      <End Role="avoirRole" EntitySet="avoirRole" />
+    </AssociationSet>
+    <AssociationSet Name="avoirRole_role_FK" Association="MyFitBodyModel.Store.avoirRole_role_FK">
+      <End Role="role" EntitySet="role" />
+      <End Role="avoirRole" EntitySet="avoirRole" />
+    </AssociationSet>
+    <AssociationSet Name="avoirRole_specNutrition2_FK" Association="MyFitBodyModel.Store.avoirRole_specNutrition2_FK">
+      <End Role="specNutrition" EntitySet="specNutrition" />
+      <End Role="avoirRole" EntitySet="avoirRole" />
+    </AssociationSet>
+    <AssociationSet Name="exercices_coach_FK" Association="MyFitBodyModel.Store.exercices_coach_FK">
+      <End Role="coach" EntitySet="coach" />
+      <End Role="exercices" EntitySet="exercices" />
+    </AssociationSet>
+    <AssociationSet Name="composer_ingredients_FK" Association="MyFitBodyModel.Store.composer_ingredients_FK">
+      <End Role="ingredients" EntitySet="ingredients" />
+      <End Role="composer" EntitySet="composer" />
+    </AssociationSet>
+    <AssociationSet Name="composer_repas0_FK" Association="MyFitBodyModel.Store.composer_repas0_FK">
+      <End Role="repas" EntitySet="repas" />
+      <End Role="composer" EntitySet="composer" />
+    </AssociationSet>
+    <AssociationSet Name="ingredients_typeIngredient_FK" Association="MyFitBodyModel.Store.ingredients_typeIngredient_FK">
+      <End Role="typeIngredient" EntitySet="typeIngredient" />
+      <End Role="ingredients" EntitySet="ingredients" />
+    </AssociationSet>
+    <AssociationSet Name="repas_specNutrition_FK" Association="MyFitBodyModel.Store.repas_specNutrition_FK">
+      <End Role="specNutrition" EntitySet="specNutrition" />
+      <End Role="repas" EntitySet="repas" />
+    </AssociationSet>
+    <AssociationSet Name="repas_typeRepas0_FK" Association="MyFitBodyModel.Store.repas_typeRepas0_FK">
+      <End Role="typeRepas" EntitySet="typeRepas" />
+      <End Role="repas" EntitySet="repas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_appartient_exercices" Association="MyFitBodyModel.Store.FK_appartient_exercices">
+      <End Role="exercices" EntitySet="exercices" />
+      <End Role="appartient" EntitySet="appartient" />
+    </AssociationSet>
+    <AssociationSet Name="FK_appartient_typeOfExercice" Association="MyFitBodyModel.Store.FK_appartient_typeOfExercice">
+      <End Role="typeOfExercice" EntitySet="typeOfExercice" />
+      <End Role="appartient" EntitySet="appartient" />
+    </AssociationSet>
+    <AssociationSet Name="FK_consulter_clients" Association="MyFitBodyModel.Store.FK_consulter_clients">
+      <End Role="clients" EntitySet="clients" />
+      <End Role="consulter" EntitySet="consulter" />
+    </AssociationSet>
+    <AssociationSet Name="FK_consulter_exercices" Association="MyFitBodyModel.Store.FK_consulter_exercices">
+      <End Role="exercices" EntitySet="exercices" />
+      <End Role="consulter" EntitySet="consulter" />
+    </AssociationSet>
+    <AssociationSet Name="FK_excluser_maladies" Association="MyFitBodyModel.Store.FK_excluser_maladies">
+      <End Role="maladies" EntitySet="maladies" />
+      <End Role="excluser" EntitySet="excluser" />
+    </AssociationSet>
+    <AssociationSet Name="FK_excluser_repas" Association="MyFitBodyModel.Store.FK_excluser_repas">
+      <End Role="repas" EntitySet="repas" />
+      <End Role="excluser" EntitySet="excluser" />
+    </AssociationSet>
+    <AssociationSet Name="FK_avoir_maladies" Association="MyFitBodyModel.Store.FK_avoir_maladies">
+      <End Role="maladies" EntitySet="maladies" />
+      <End Role="avoir" EntitySet="avoir" />
+    </AssociationSet>
+    <AssociationSet Name="FK_avoir_reponses" Association="MyFitBodyModel.Store.FK_avoir_reponses">
+      <End Role="reponses" EntitySet="reponses" />
+      <End Role="avoir" EntitySet="avoir" />
+    </AssociationSet>
+    <AssociationSet Name="FK_filtrerExercice_exercices" Association="MyFitBodyModel.Store.FK_filtrerExercice_exercices">
+      <End Role="exercices" EntitySet="exercices" />
+      <End Role="filtrerExercice" EntitySet="filtrerExercice" />
+    </AssociationSet>
+    <AssociationSet Name="FK_filtrerExercice_reponses" Association="MyFitBodyModel.Store.FK_filtrerExercice_reponses">
+      <End Role="reponses" EntitySet="reponses" />
+      <End Role="filtrerExercice" EntitySet="filtrerExercice" />
+    </AssociationSet>
+    <AssociationSet Name="FK_filtrerRepas_repas" Association="MyFitBodyModel.Store.FK_filtrerRepas_repas">
+      <End Role="repas" EntitySet="repas" />
+      <End Role="filtrerRepas" EntitySet="filtrerRepas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_filtrerRepas_reponses" Association="MyFitBodyModel.Store.FK_filtrerRepas_reponses">
+      <End Role="reponses" EntitySet="reponses" />
+      <End Role="filtrerRepas" EntitySet="filtrerRepas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_repondre_clients" Association="MyFitBodyModel.Store.FK_repondre_clients">
+      <End Role="clients" EntitySet="clients" />
+      <End Role="repondre" EntitySet="repondre" />
+    </AssociationSet>
+    <AssociationSet Name="FK_repondre_reponses" Association="MyFitBodyModel.Store.FK_repondre_reponses">
+      <End Role="reponses" EntitySet="reponses" />
+      <End Role="repondre" EntitySet="repondre" />
+    </AssociationSet>
+    <AssociationSet Name="questions_gestionnaire_FK" Association="MyFitBodyModel.Store.questions_gestionnaire_FK">
+      <End Role="gestionnaire" EntitySet="gestionnaire" />
+      <End Role="questions" EntitySet="questions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_reponses_question" Association="MyFitBodyModel.Store.FK_reponses_question">
+      <End Role="questions" EntitySet="questions" />
+      <End Role="reponses" EntitySet="reponses" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="avoirRole">
+    <Key>
+      <PropertyRef Name="idRole" />
+      <PropertyRef Name="idCoach" />
+      <PropertyRef Name="idClient" />
+      <PropertyRef Name="idSpecN" />
+      <PropertyRef Name="idGestionnaire" />
+    </Key>
+    <Property Name="idRole" Type="int" Nullable="false" />
+    <Property Name="idCoach" Type="int" Nullable="false" />
+    <Property Name="idClient" Type="int" Nullable="false" />
+    <Property Name="idSpecN" Type="int" Nullable="false" />
+    <Property Name="idGestionnaire" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="clients">
+    <Key>
+      <PropertyRef Name="idClient" />
+    </Key>
+    <Property Name="idClient" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nom" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="prenom" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="photo" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="coach">
+    <Key>
+      <PropertyRef Name="idCoach" />
+    </Key>
+    <Property Name="idCoach" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nom" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="prenom" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="username" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="password" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="email" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="photo" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="bio" Type="varchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="composer">
+    <Key>
+      <PropertyRef Name="nom" />
+      <PropertyRef Name="label" />
+    </Key>
+    <Property Name="nom" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="label" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="quentite" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="exercices">
+    <Key>
+      <PropertyRef Name="idExercice" />
+    </Key>
+    <Property Name="idExercice" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="duree" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="freqence" Type="int" Nullable="false" />
+    <Property Name="idCoach" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="gestionnaire">
+    <Key>
+      <PropertyRef Name="idGestionnaire" />
+    </Key>
+    <Property Name="idGestionnaire" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nom" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="prenom" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="username" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="password" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ingredients">
+    <Key>
+      <PropertyRef Name="nom" />
+    </Key>
+    <Property Name="nom" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="calories" Type="float" Nullable="false" />
+    <Property Name="label" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="maladies">
+    <Key>
+      <PropertyRef Name="nomMaladie" />
+    </Key>
+    <Property Name="nomMaladie" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="repas">
+    <Key>
+      <PropertyRef Name="label" />
+    </Key>
+    <Property Name="label" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="description" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="photo" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="idSpecN" Type="int" Nullable="false" />
+    <Property Name="label_typeRepas" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="role">
+    <Key>
+      <PropertyRef Name="idRole" />
+    </Key>
+    <Property Name="idRole" Type="int" Nullable="false" />
+    <Property Name="nomRole" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="specNutrition">
+    <Key>
+      <PropertyRef Name="idSpecN" />
+    </Key>
+    <Property Name="idSpecN" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nom" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="prenom" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="username" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="password" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="email" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="photo" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="bio" Type="varchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="typeIngredient">
+    <Key>
+      <PropertyRef Name="label" />
+    </Key>
+    <Property Name="label" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="typeOfExercice">
+    <Key>
+      <PropertyRef Name="type" />
+    </Key>
+    <Property Name="type" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="description" Type="varchar" Nullable="false" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="typeRepas">
+    <Key>
+      <PropertyRef Name="label" />
+    </Key>
+    <Property Name="label" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="reponses">
+    <Key>
+      <PropertyRef Name="idReponse" />
+    </Key>
+    <Property Name="idReponse" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="reponse" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="juste" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="id_question" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="questions">
+    <Key>
+      <PropertyRef Name="id_question" />
+    </Key>
+    <Property Name="label" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="idGestionnaire" Type="int" Nullable="false" />
+    <Property Name="id_question" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="appartient">
+    <Key>
+      <PropertyRef Name="exercices_idExercice" />
+      <PropertyRef Name="typeOfExercice_type" />
+    </Key>
+    <Property Name="exercices_idExercice" Type="int" Nullable="false" />
+    <Property Name="typeOfExercice_type" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="consulter">
+    <Key>
+      <PropertyRef Name="clients_idClient" />
+      <PropertyRef Name="exercices_idExercice" />
+    </Key>
+    <Property Name="clients_idClient" Type="int" Nullable="false" />
+    <Property Name="exercices_idExercice" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="excluser">
+    <Key>
+      <PropertyRef Name="maladies_nomMaladie" />
+      <PropertyRef Name="repas_label" />
+    </Key>
+    <Property Name="maladies_nomMaladie" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="repas_label" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="avoir">
+    <Key>
+      <PropertyRef Name="maladies_nomMaladie" />
+      <PropertyRef Name="reponses_idReponse" />
+    </Key>
+    <Property Name="maladies_nomMaladie" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="reponses_idReponse" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="filtrerExercice">
+    <Key>
+      <PropertyRef Name="exercices_idExercice" />
+      <PropertyRef Name="reponses_idReponse" />
+    </Key>
+    <Property Name="exercices_idExercice" Type="int" Nullable="false" />
+    <Property Name="reponses_idReponse" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="filtrerRepas">
+    <Key>
+      <PropertyRef Name="repas_label" />
+      <PropertyRef Name="reponses_idReponse" />
+    </Key>
+    <Property Name="repas_label" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="reponses_idReponse" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="repondre">
+    <Key>
+      <PropertyRef Name="clients_idClient" />
+      <PropertyRef Name="reponses_idReponse" />
+    </Key>
+    <Property Name="clients_idClient" Type="int" Nullable="false" />
+    <Property Name="reponses_idReponse" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="avoirRole_clients1_FK">
+    <End Role="clients" Type="MyFitBodyModel.Store.clients" Multiplicity="1" />
+    <End Role="avoirRole" Type="MyFitBodyModel.Store.avoirRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="clients">
+        <PropertyRef Name="idClient" />
+      </Principal>
+      <Dependent Role="avoirRole">
+        <PropertyRef Name="idClient" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="avoirRole_coach0_FK">
+    <End Role="coach" Type="MyFitBodyModel.Store.coach" Multiplicity="1" />
+    <End Role="avoirRole" Type="MyFitBodyModel.Store.avoirRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="coach">
+        <PropertyRef Name="idCoach" />
+      </Principal>
+      <Dependent Role="avoirRole">
+        <PropertyRef Name="idCoach" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="avoirRole_gestionnaire3_FK">
+    <End Role="gestionnaire" Type="MyFitBodyModel.Store.gestionnaire" Multiplicity="1" />
+    <End Role="avoirRole" Type="MyFitBodyModel.Store.avoirRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="gestionnaire">
+        <PropertyRef Name="idGestionnaire" />
+      </Principal>
+      <Dependent Role="avoirRole">
+        <PropertyRef Name="idGestionnaire" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="avoirRole_role_FK">
+    <End Role="role" Type="MyFitBodyModel.Store.role" Multiplicity="1" />
+    <End Role="avoirRole" Type="MyFitBodyModel.Store.avoirRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="role">
+        <PropertyRef Name="idRole" />
+      </Principal>
+      <Dependent Role="avoirRole">
+        <PropertyRef Name="idRole" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="avoirRole_specNutrition2_FK">
+    <End Role="specNutrition" Type="MyFitBodyModel.Store.specNutrition" Multiplicity="1" />
+    <End Role="avoirRole" Type="MyFitBodyModel.Store.avoirRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="specNutrition">
+        <PropertyRef Name="idSpecN" />
+      </Principal>
+      <Dependent Role="avoirRole">
+        <PropertyRef Name="idSpecN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="exercices_coach_FK">
+    <End Role="coach" Type="MyFitBodyModel.Store.coach" Multiplicity="1" />
+    <End Role="exercices" Type="MyFitBodyModel.Store.exercices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="coach">
+        <PropertyRef Name="idCoach" />
+      </Principal>
+      <Dependent Role="exercices">
+        <PropertyRef Name="idCoach" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="composer_ingredients_FK">
+    <End Role="ingredients" Type="MyFitBodyModel.Store.ingredients" Multiplicity="1" />
+    <End Role="composer" Type="MyFitBodyModel.Store.composer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ingredients">
+        <PropertyRef Name="nom" />
+      </Principal>
+      <Dependent Role="composer">
+        <PropertyRef Name="nom" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="composer_repas0_FK">
+    <End Role="repas" Type="MyFitBodyModel.Store.repas" Multiplicity="1" />
+    <End Role="composer" Type="MyFitBodyModel.Store.composer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="repas">
+        <PropertyRef Name="label" />
+      </Principal>
+      <Dependent Role="composer">
+        <PropertyRef Name="label" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ingredients_typeIngredient_FK">
+    <End Role="typeIngredient" Type="MyFitBodyModel.Store.typeIngredient" Multiplicity="1" />
+    <End Role="ingredients" Type="MyFitBodyModel.Store.ingredients" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="typeIngredient">
+        <PropertyRef Name="label" />
+      </Principal>
+      <Dependent Role="ingredients">
+        <PropertyRef Name="label" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="repas_specNutrition_FK">
+    <End Role="specNutrition" Type="MyFitBodyModel.Store.specNutrition" Multiplicity="1" />
+    <End Role="repas" Type="MyFitBodyModel.Store.repas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="specNutrition">
+        <PropertyRef Name="idSpecN" />
+      </Principal>
+      <Dependent Role="repas">
+        <PropertyRef Name="idSpecN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="repas_typeRepas0_FK">
+    <End Role="typeRepas" Type="MyFitBodyModel.Store.typeRepas" Multiplicity="1" />
+    <End Role="repas" Type="MyFitBodyModel.Store.repas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="typeRepas">
+        <PropertyRef Name="label" />
+      </Principal>
+      <Dependent Role="repas">
+        <PropertyRef Name="label_typeRepas" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="questions_gestionnaire_FK">
+    <End Role="gestionnaire" Type="MyFitBodyModel.Store.gestionnaire" Multiplicity="1" />
+    <End Role="questions" Type="MyFitBodyModel.Store.questions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="gestionnaire">
+        <PropertyRef Name="idGestionnaire" />
+      </Principal>
+      <Dependent Role="questions">
+        <PropertyRef Name="idGestionnaire" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_reponses_question">
+    <End Role="questions" Type="MyFitBodyModel.Store.questions" Multiplicity="1" />
+    <End Role="reponses" Type="MyFitBodyModel.Store.reponses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="questions">
+        <PropertyRef Name="id_question" />
+      </Principal>
+      <Dependent Role="reponses">
+        <PropertyRef Name="id_question" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_appartient_exercices">
+    <End Role="exercices" Type="MyFitBodyModel.Store.exercices" Multiplicity="1" />
+    <End Role="appartient" Type="MyFitBodyModel.Store.appartient" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="exercices">
+        <PropertyRef Name="idExercice" />
+      </Principal>
+      <Dependent Role="appartient">
+        <PropertyRef Name="exercices_idExercice" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_appartient_typeOfExercice">
+    <End Role="appartient" Type="MyFitBodyModel.Store.appartient" Multiplicity="*" />
+    <End Role="typeOfExercice" Type="MyFitBodyModel.Store.typeOfExercice" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="typeOfExercice">
+        <PropertyRef Name="type" />
+      </Principal>
+      <Dependent Role="appartient">
+        <PropertyRef Name="typeOfExercice_type" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_consulter_clients">
+    <End Role="clients" Type="MyFitBodyModel.Store.clients" Multiplicity="1" />
+    <End Role="consulter" Type="MyFitBodyModel.Store.consulter" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="clients">
+        <PropertyRef Name="idClient" />
+      </Principal>
+      <Dependent Role="consulter">
+        <PropertyRef Name="clients_idClient" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_consulter_exercices">
+    <End Role="consulter" Type="MyFitBodyModel.Store.consulter" Multiplicity="*" />
+    <End Role="exercices" Type="MyFitBodyModel.Store.exercices" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="exercices">
+        <PropertyRef Name="idExercice" />
+      </Principal>
+      <Dependent Role="consulter">
+        <PropertyRef Name="exercices_idExercice" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_excluser_maladies">
+    <End Role="maladies" Type="MyFitBodyModel.Store.maladies" Multiplicity="1" />
+    <End Role="excluser" Type="MyFitBodyModel.Store.excluser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="maladies">
+        <PropertyRef Name="nomMaladie" />
+      </Principal>
+      <Dependent Role="excluser">
+        <PropertyRef Name="maladies_nomMaladie" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_excluser_repas">
+    <End Role="excluser" Type="MyFitBodyModel.Store.excluser" Multiplicity="*" />
+    <End Role="repas" Type="MyFitBodyModel.Store.repas" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="repas">
+        <PropertyRef Name="label" />
+      </Principal>
+      <Dependent Role="excluser">
+        <PropertyRef Name="repas_label" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_avoir_maladies">
+    <End Role="maladies" Type="MyFitBodyModel.Store.maladies" Multiplicity="1" />
+    <End Role="avoir" Type="MyFitBodyModel.Store.avoir" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="maladies">
+        <PropertyRef Name="nomMaladie" />
+      </Principal>
+      <Dependent Role="avoir">
+        <PropertyRef Name="maladies_nomMaladie" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_avoir_reponses">
+    <End Role="avoir" Type="MyFitBodyModel.Store.avoir" Multiplicity="*" />
+    <End Role="reponses" Type="MyFitBodyModel.Store.reponses" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="reponses">
+        <PropertyRef Name="idReponse" />
+      </Principal>
+      <Dependent Role="avoir">
+        <PropertyRef Name="reponses_idReponse" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_filtrerExercice_exercices">
+    <End Role="exercices" Type="MyFitBodyModel.Store.exercices" Multiplicity="1" />
+    <End Role="filtrerExercice" Type="MyFitBodyModel.Store.filtrerExercice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="exercices">
+        <PropertyRef Name="idExercice" />
+      </Principal>
+      <Dependent Role="filtrerExercice">
+        <PropertyRef Name="exercices_idExercice" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_filtrerExercice_reponses">
+    <End Role="filtrerExercice" Type="MyFitBodyModel.Store.filtrerExercice" Multiplicity="*" />
+    <End Role="reponses" Type="MyFitBodyModel.Store.reponses" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="reponses">
+        <PropertyRef Name="idReponse" />
+      </Principal>
+      <Dependent Role="filtrerExercice">
+        <PropertyRef Name="reponses_idReponse" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_filtrerRepas_repas">
+    <End Role="repas" Type="MyFitBodyModel.Store.repas" Multiplicity="1" />
+    <End Role="filtrerRepas" Type="MyFitBodyModel.Store.filtrerRepas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="repas">
+        <PropertyRef Name="label" />
+      </Principal>
+      <Dependent Role="filtrerRepas">
+        <PropertyRef Name="repas_label" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_filtrerRepas_reponses">
+    <End Role="filtrerRepas" Type="MyFitBodyModel.Store.filtrerRepas" Multiplicity="*" />
+    <End Role="reponses" Type="MyFitBodyModel.Store.reponses" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="reponses">
+        <PropertyRef Name="idReponse" />
+      </Principal>
+      <Dependent Role="filtrerRepas">
+        <PropertyRef Name="reponses_idReponse" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_repondre_clients">
+    <End Role="clients" Type="MyFitBodyModel.Store.clients" Multiplicity="1" />
+    <End Role="repondre" Type="MyFitBodyModel.Store.repondre" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="clients">
+        <PropertyRef Name="idClient" />
+      </Principal>
+      <Dependent Role="repondre">
+        <PropertyRef Name="clients_idClient" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_repondre_reponses">
+    <End Role="repondre" Type="MyFitBodyModel.Store.repondre" Multiplicity="*" />
+    <End Role="reponses" Type="MyFitBodyModel.Store.reponses" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="reponses">
+        <PropertyRef Name="idReponse" />
+      </Principal>
+      <Dependent Role="repondre">
+        <PropertyRef Name="reponses_idReponse" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
